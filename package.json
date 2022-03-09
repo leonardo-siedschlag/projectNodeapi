@@ -25,5 +25,10 @@
   },
   "dependencies": {
     "@types/node": "^17.0.21"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   }
 }

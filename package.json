@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
+    "test": "jest --passWithNoTests",
     "prepare": "husky install",
-    "test:staged": "jest"
+    "test:staged": "jest --passWithNoTests"
   },
   "keywords": [],
   "author": "",
@@ -35,7 +35,6 @@
     "hooks": {
       "pre-commit": "lint-staged"
     }
-  },
-  "lint": "eslint --ext \".js,.vue\" --ignore-path .gitignore .",
-  "lint-fix": "npm run lint -- --fix"
+  }
+  
 }
